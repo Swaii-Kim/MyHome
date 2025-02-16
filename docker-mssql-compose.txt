@@ -1,0 +1,14 @@
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    user: root
+    restart: always
+    container_name : MyMssql
+    ports:
+      - 1433:1433
+    volumes:
+      - 
+    environment:
+      ACCEPT_EULA: Y
+      MSSQL_SA_PASSWORD: 
+      TZ: Asia/Seoul
