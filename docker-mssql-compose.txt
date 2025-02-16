@@ -7,8 +7,8 @@ services:
     ports:
       - 1433:1433
     volumes:
-      - 
+      - {path}::/var/opt/mssql/data
     environment:
       ACCEPT_EULA: Y
-      MSSQL_SA_PASSWORD: 
+      MSSQL_SA_PASSWORD: {pw}
       TZ: Asia/Seoul
